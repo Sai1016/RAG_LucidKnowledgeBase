@@ -1,0 +1,11 @@
+pymupdf # for PDF text extraction
+langchain # for text splitting
+sentence-transformers # for embeddings
+chromadb # for vector database
+fastapi # for API
+uvicorn # for running the API server
+streamlit # for frontend interface
+transformers # for language models   
+torch 
+python-multipart # for file uploads in FastAPI
+
