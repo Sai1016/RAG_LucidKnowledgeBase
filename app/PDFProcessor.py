@@ -32,10 +32,10 @@ class PDFProcessor:
             print(f"🧹 Cleaned and extracted page {page_num}/{len(doc)}")
 
         doc.close()
-        print("✅ Finished extracting and cleaning PDF.")
+        print("Finished extracting and cleaning PDF.")
         return all_text
 
-    # ==========================================================
+    
     # Clean Text (Redefined for large PDFs)
     # ==========================================================
     def clean_text(self, text: str) -> str:
@@ -89,7 +89,7 @@ class PDFProcessor:
         for i, (chunk, emb) in enumerate(zip(chunks, embeddings)):
             self.collection.add(ids=[str(i)], documents=[chunk], embeddings=[emb])
 
-        print(f"✅ Indexed {len(chunks)} cleaned chunks from {self.pdf_path}")
+        print(f"Indexed {len(chunks)} cleaned chunks from {self.pdf_path}")
 
     # ==========================================================
     # Retrieve Relevant Chunks
